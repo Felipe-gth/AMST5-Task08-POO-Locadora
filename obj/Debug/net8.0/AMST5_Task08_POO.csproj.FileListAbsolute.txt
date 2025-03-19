@@ -1,0 +1,28 @@
+C:\AMST5\Project\POO\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.exe
+C:\AMST5\Project\POO\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.deps.json
+C:\AMST5\Project\POO\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.runtimeconfig.json
+C:\AMST5\Project\POO\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.dll
+C:\AMST5\Project\POO\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.pdb
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.AssemblyInfoInputs.cache
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.AssemblyInfo.cs
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.csproj.CoreCompileInputs.cache
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.dll
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\refint\AMST5_Task08_POO.dll
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.pdb
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.genruntimeconfig.cache
+C:\AMST5\Project\POO\AMST5_Task08_POO\obj\Debug\net8.0\ref\AMST5_Task08_POO.dll
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.exe
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.deps.json
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.runtimeconfig.json
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.dll
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.pdb
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.GeneratedMSBuildEditorConfig.editorconfig
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.AssemblyInfoInputs.cache
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.AssemblyInfo.cs
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.csproj.CoreCompileInputs.cache
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.dll
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\refint\AMST5_Task08_POO.dll
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.pdb
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.genruntimeconfig.cache
+E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\ref\AMST5_Task08_POO.dll
