@@ -26,3 +26,18 @@ E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\refint
 E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.pdb
 E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.genruntimeconfig.cache
 E:\2º Ano - 2025\C# - POO - Jeferson L\AMST5_Task08_POO\obj\Debug\net8.0\ref\AMST5_Task08_POO.dll
+C:\Users\Felipe\projects\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.exe
+C:\Users\Felipe\projects\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.deps.json
+C:\Users\Felipe\projects\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.runtimeconfig.json
+C:\Users\Felipe\projects\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.dll
+C:\Users\Felipe\projects\AMST5_Task08_POO\bin\Debug\net8.0\AMST5_Task08_POO.pdb
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.AssemblyInfoInputs.cache
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.AssemblyInfo.cs
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.sourcelink.json
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.dll
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\refint\AMST5_Task08_POO.dll
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.pdb
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\AMST5_Task08_POO.genruntimeconfig.cache
+C:\Users\Felipe\projects\AMST5_Task08_POO\obj\Debug\net8.0\ref\AMST5_Task08_POO.dll

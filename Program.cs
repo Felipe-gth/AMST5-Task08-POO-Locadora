@@ -1,13 +1,16 @@
-﻿// --------------------------------------------------------------------- Declaração de variáveis ----------------------------------------------------------------------
+﻿using System.Globalization;
+
+// --------------------------------------------------------------------- Declaração de variáveis ----------------------------------------------------------------------
 
 double days = 0;
 double totalPrice = 0;
 int totalTime = 0;
 double preçoTotalHorario = 0;
+double simNao = 0;
 
 // ------------------------------------------------------------ Informações a serem digitadas pelo usuário ------------------------------------------------------------
 
-Console.Write("Informe os instantes inicial e final: ");
+Console.Write("Informe os instantes inicial e final (00 - 23): ");
 string[] instants = Console.ReadLine().Split(' ');
 int inicialInstant = int.Parse(instants[0]);
 int finalInstant = int.Parse(instants[1]);
@@ -28,12 +31,16 @@ int id = int.Parse(Console.ReadLine());
 if (inicialInstant < finalInstant){
     totalTime = finalInstant - inicialInstant;
 
-    preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice); // Chamada da função para calcular o preço da locação com os dados que o usuário digitou.
-}                                                                                             
+    preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice, simNao); // Chamada da função para calcular o preço da locação com os dados que o usuário digitou.
+}  
+else if (inicialInstant == finalInstant){
+    totalTime = 13;
+    preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice, simNao);
+}                                                                                           
 else{
     totalTime = 24 - inicialInstant + finalInstant;
 
-    preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice); // Chamada da função para calcular o preço da locação com os dados que o usuário digitou.
+    preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice, simNao); // Chamada da função para calcular o preço da locação com os dados que o usuário digitou.
 }
 
 // ------------------------------------------------ Estrutura de condição para calcular e mostrar o imposto a ser pago ------------------------------------------------
@@ -62,11 +69,19 @@ myCar.ShowInfo();
 
 // -------------------------------------------------------- Criação da função para calcular o preço da locação --------------------------------------------------------
 
-static double totalValue(double hour, double a, double b, double c, double d, double total){
+static double totalValue(double hour, double a, double b, double c, double d, double total, double yesNo){
     if (hour > 12){
-        Console.Write($"O locador ficou quantos dias com o carro? ");
-        b = double.Parse(Console.ReadLine());
-        total = a * b;
+        Console.Write("O locador ficou mais de um dia com o carro (0 = não/1 = sim)? ");
+        yesNo = double.Parse(Console.ReadLine());
+
+        if (yesNo == 1){
+            Console.Write($"O locador ficou quantos dias com o carro? ");
+            b = double.Parse(Console.ReadLine());
+            total = a * b;
+        }
+        else{
+            total = a * 1;
+        }
     }
     else{
         total = c * d;
