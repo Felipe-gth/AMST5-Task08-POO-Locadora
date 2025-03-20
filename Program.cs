@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-// --------------------------------------------------------------------- Declaração de variáveis ----------------------------------------------------------------------
+﻿// --------------------------------------------------------------------- Declaração de variáveis ----------------------------------------------------------------------
 
 double days = 0;
 double totalPrice = 0;
@@ -34,7 +32,7 @@ if (inicialInstant < finalInstant){
     preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice, simNao); // Chamada da função para calcular o preço da locação com os dados que o usuário digitou.
 }  
 else if (inicialInstant == finalInstant){
-    totalTime = 13;
+    totalTime = 13; // Tempo sera igual a 13 (maior que 12, cobra o dia), pois se a hora de início e a de entrega forem iguais, o locador utilizou 24h.
     preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice, simNao);
 }                                                                                           
 else{
@@ -71,9 +69,9 @@ myCar.ShowInfo();
 
 static double totalValue(double hour, double a, double b, double c, double d, double total, double yesNo){
     if (hour > 12){
-        Console.Write("O locador ficou mais de um dia com o carro (0 = não/1 = sim)? ");
-        yesNo = double.Parse(Console.ReadLine());
-
+        Console.Write("O locador ficou mais de um dia com o carro (0 = não/1 = sim)? "); // Caso locador utilizar por mais de 12 horas (cobra um dia), o programa pergunta se o 
+        yesNo = double.Parse(Console.ReadLine());                                        // locador utilizou por mais de um dia, caso sim, pergunta quantos e cobra de acordo com
+                                                                                         // a quantidade de dias, caso nao, cobra apenas um dia.
         if (yesNo == 1){
             Console.Write($"O locador ficou quantos dias com o carro? ");
             b = double.Parse(Console.ReadLine());
