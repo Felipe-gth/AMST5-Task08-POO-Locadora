@@ -16,7 +16,7 @@ Console.Write("Agora informe o preço do dia: "); // Solicita ao usuário o pre�
 double dayPrice = double.Parse(Console.ReadLine());
 
 Prices Price = new Prices(hourPrice, dayPrice); // Criação de uma instância (objeto) da classe Prices
-Price.CalculatePrice(time, ""); // Chamada do método para calcular o preço da locação. time = parametro de entrada do metodo que tem o valor de Time, que é a instancia da classe Time
+Price.CalculatePrice(time); // Chamada do método para calcular o preço da locação. time = parametro de entrada do metodo que tem o valor de Time, que é a instancia da classe Time
 
 
 Console.WriteLine(""); // Pula uma linha
