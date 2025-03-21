@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AMST5_Task08_POO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+129a4e5b0ca508adb0b0cc58fe3ca012e1a5e0b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aed9889e614fa970dac2789639e84a5cafde7397")]
 [assembly: System.Reflection.AssemblyProductAttribute("AMST5_Task08_POO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AMST5_Task08_POO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

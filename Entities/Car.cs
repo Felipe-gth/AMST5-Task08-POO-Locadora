@@ -1,21 +1,14 @@
 public class Car{
+    public Car(int id, string model){ // Criação do construtor para acessar os atributos privados em outro(s) arquivo(s)
+        Id = id;
+        Model = model;
+    }    
 
-// -------------------- Criação do construtor para ter acesso aos valores --------------------
+    public int Id { get; private set; } // Declaração dos atributos
+    public string Model { get; private set; }
 
-        public Car(int id, string model){
-            Id = id;
-            Model = model;
-        } 
-
-// --------------------------------- Declaração dos atributos --------------------------------
-
-        public int Id { get; private set; }
-        public string Model { get; private set; }
-
-// ---------------------- Criação do método para mostrar as informações ----------------------
-
-        public void ShowInfo(){
-            Console.WriteLine($"Id: {Id}");
-            Console.WriteLine($"Model: {Model}");
-        }
+    public void ShowInfo(){ // Método para mostrar as informações do carro
+        Console.WriteLine($"Id: {Id}");
+        Console.WriteLine($"Model: {Model}");
+    }
 }

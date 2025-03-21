@@ -1,89 +1,35 @@
-﻿// --------------------------------------------------------------------- Declaração de variáveis ----------------------------------------------------------------------
-
-double days = 0;
-double totalPrice = 0;
-int totalTime = 0;
-double preçoTotalHorario = 0;
-double simNao = 0;
-
-// ------------------------------------------------------------ Informações a serem digitadas pelo usuário ------------------------------------------------------------
-
-Console.Write("Informe os instantes inicial e final (00 - 23): ");
+﻿Console.Write("Informe os instantes inicial e final (00 - 23): "); // Solicita ao usuário os instantes inicial e final
 string[] instants = Console.ReadLine().Split(' ');
 int inicialInstant = int.Parse(instants[0]);
 int finalInstant = int.Parse(instants[1]);
 
-Console.Write("Informe o preço da hora: ");
-double price = double.Parse(Console.ReadLine());
+Time Time = new Time(inicialInstant, finalInstant); // Criação de uma Instância (objeto) da classe Time
+Time.CalculateTotalTime(); // Chamada do método para calcular o tempo total da locação
 
-Console.Write("Agora informe o preço do dia: ");
+int time = Time.TotalTime; // Criação da variável para armazenar o tempo total da locação
+
+
+Console.Write("Informe o preço da hora: "); // Solicita ao usuário o preço da hora
+double hourPrice = double.Parse(Console.ReadLine());
+
+Console.Write("Agora informe o preço do dia: "); // Solicita ao usuário o preço do dia
 double dayPrice = double.Parse(Console.ReadLine());
 
-Console.Write("Informe o modelo do carro: ");
+Prices Price = new Prices(hourPrice, dayPrice); // Criação de uma instância (objeto) da classe Prices
+Price.CalculatePrice(time, ""); // Chamada do método para calcular o preço da locação. time = parametro de entrada do metodo que tem o valor de Time, que é a instancia da classe Time
+
+
+Console.WriteLine(""); // Pula uma linha
+
+
+Console.Write("Informe o modelo do carro: "); // Solicita ao usuário o modelo do carro
 string model = Console.ReadLine();
-Console.Write("Informe o id do carro: ");
+Console.Write("Informe o id do carro: ");// Solicita ao usuário o id do carro
 int id = int.Parse(Console.ReadLine());
 
-// ------------------------------------------------------ Estrutura de condição para calcular o tempo da locação ------------------------------------------------------
+Car myCar = new Car(id, model); // Criação de uma instância (objeto) da classe Car
+myCar.ShowInfo(); // Chamada do método para mostrar as informações do carro
 
-if (inicialInstant < finalInstant){
-    totalTime = finalInstant - inicialInstant;
 
-    preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice, simNao); // Chamada da função para calcular o preço da locação com os dados que o usuário digitou.
-}  
-else if (inicialInstant == finalInstant){
-    totalTime = 13; // Tempo sera igual a 13 (maior que 12, cobra o dia), pois se a hora de início e a de entrega forem iguais, o locador utilizou 24h.
-    preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice, simNao);
-}                                                                                           
-else{
-    totalTime = 24 - inicialInstant + finalInstant;
-
-    preçoTotalHorario = totalValue(totalTime, dayPrice, days, price, totalTime, totalPrice, simNao); // Chamada da função para calcular o preço da locação com os dados que o usuário digitou.
-}
-
-// ------------------------------------------------ Estrutura de condição para calcular e mostrar o imposto a ser pago ------------------------------------------------
-
-if (preçoTotalHorario > 100){
-    Console.WriteLine(""); // Espaçador para formatação no console.
-
-    Console.WriteLine($"O preço sem imposto a ser cobrado sera: R${preçoTotalHorario.ToString("F2")}");    
-    Console.WriteLine($"O imposto a ser cobrado será de: R${(preçoTotalHorario * 0.15).ToString("F2")}"); // Mostrar o preço do imposto.
-    totalPrice = preçoTotalHorario * 1.15;
-    Console.WriteLine($"O preço com imposto ficou: R${totalPrice.ToString("F2")}"); // Mostrar o preço com imposto aplicado.
-}
-else {
-    Console.WriteLine(""); // Espaçador para formatação no console. 
-
-    Console.WriteLine($"O preço sem imposto a ser cobrado sera: R${preçoTotalHorario.ToString("F2")}"); 
-    Console.WriteLine($"O imposto a ser cobrado será de: R${(preçoTotalHorario * 0.2).ToString("F2")}"); // Mostrar o preço do imposto.
-    totalPrice = preçoTotalHorario * 1.2;
-    Console.WriteLine($"O preço com imposto ficou: R${totalPrice.ToString("F2")}"); // Mostrar o preço com imposto aplicado.
-}
-
-// ------------------------------------------------------------ Criação de um objeto (instância da classe) ------------------------------------------------------------
-
-Car myCar = new Car(id, model); 
-myCar.ShowInfo();
-
-// -------------------------------------------------------- Criação da função para calcular o preço da locação --------------------------------------------------------
-
-static double totalValue(double hour, double a, double b, double c, double d, double total, double yesNo){
-    if (hour > 12){
-        Console.Write("O locador ficou mais de um dia com o carro (0 = não/1 = sim)? "); // Caso locador utilizar por mais de 12 horas (cobra um dia), o programa pergunta se o 
-        yesNo = double.Parse(Console.ReadLine());                                        // locador utilizou por mais de um dia, caso sim, pergunta quantos e cobra de acordo com
-                                                                                         // a quantidade de dias, caso nao, cobra apenas um dia.
-        if (yesNo == 1){
-            Console.Write($"O locador ficou quantos dias com o carro? ");
-            b = double.Parse(Console.ReadLine());
-            total = a * b;
-        }
-        else{
-            total = a * 1;
-        }
-    }
-    else{
-        total = c * d;
-    }
-
-    return total;
-}
+Console.WriteLine("O preço a ser cobrado é: "); // Mostra ao usuário o preço a ser cobrado
+Console.WriteLine(Price.ToString()); // Chamada do método para retornar o preço da locação
