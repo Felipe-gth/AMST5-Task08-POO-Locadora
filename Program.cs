@@ -3,7 +3,7 @@ string[] instants = Console.ReadLine().Split(' ');
 int inicialInstant = int.Parse(instants[0]);
 int finalInstant = int.Parse(instants[1]);
 
-int totalTimeime = Time.CalculateTotalTime(inicialInstant, finalInstant); // Criação da variável para armazenar o valor retornado pelo método CalculateTotalTime
+int totalTime = Time.CalculateTotalTime(inicialInstant, finalInstant); // Criação da variável para armazenar o valor retornado pelo método CalculateTotalTime
 
 
 Console.Write("Informe o preço da hora: "); // Solicita ao usuário o preço da hora
@@ -13,7 +13,7 @@ Console.Write("Agora informe o preço do dia: "); // Solicita ao usuário o pre�
 double dayPrice = double.Parse(Console.ReadLine());
 
 Prices Price = new Prices(hourPrice, dayPrice); // Criação de uma instância (objeto) da classe Prices
-Price.CalculatePrice(totalTimeime); // Chamada do método para calcular o preço da locação. time = parametro de entrada do metodo que tem o valor de Time, que é a instancia da classe Time
+Price.CalculatePrice(totalTime); // Chamada do método para calcular o preço da locação. time = parametro de entrada do metodo que tem o valor de Time, que é a instancia da classe Time
 
 
 Console.WriteLine(""); // Pula uma linha 
