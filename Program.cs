@@ -16,7 +16,7 @@ Prices Price = new Prices(hourPrice, dayPrice); // Criação de uma instância (
 Price.CalculatePrice(time); // Chamada do método para calcular o preço da locação. time = parametro de entrada do metodo que tem o valor de Time, que é a instancia da classe Time
 
 
-Console.WriteLine(""); // Pula uma linha
+Console.WriteLine(""); // Pula uma linha 
 
 
 Console.Write("Informe o modelo do carro: "); // Solicita ao usuário o modelo do carro
@@ -27,6 +27,7 @@ int id = int.Parse(Console.ReadLine());
 Car myCar = new Car(id, model); // Criação de uma instância (objeto) da classe Car
 myCar.ShowInfo(); // Chamada do método para mostrar as informações do carro
 
+Console.WriteLine(""); // Pula uma linha
 
 Console.WriteLine("O preço a ser cobrado é: "); // Mostra ao usuário o preço a ser cobrado
 Console.WriteLine(Price.ToString()); // Chamada do método para retornar o preço da locação
