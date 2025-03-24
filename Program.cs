@@ -3,10 +3,7 @@ string[] instants = Console.ReadLine().Split(' ');
 int inicialInstant = int.Parse(instants[0]);
 int finalInstant = int.Parse(instants[1]);
 
-Time Time = new Time(inicialInstant, finalInstant); // Criação de uma Instância (objeto) da classe Time
-Time.CalculateTotalTime(); // Chamada do método para calcular o tempo total da locação
-
-int time = Time.TotalTime; // Criação da variável para armazenar o tempo total da locação
+int time = Time.CalculateTotalTime(inicialInstant, finalInstant); // Criação da variável para armazenar o valor retornado pelo método CalculateTotalTime
 
 
 Console.Write("Informe o preço da hora: "); // Solicita ao usuário o preço da hora

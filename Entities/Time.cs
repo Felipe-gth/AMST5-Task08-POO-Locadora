@@ -6,23 +6,22 @@ public class Time
         FinalInstant = finalInstant;
     }   
 
-    public int InicialInstant { get; private set; } // Declaração dos atributos
-    public int FinalInstant { get; private set; }
-    public int TotalTime { get; set; }
+    public static int InicialInstant { get; private set; } // Declaração dos atributos
+    public static int FinalInstant { get; private set; }
 
-    public int CalculateTotalTime() // Método para calcular o tempo total da locação
+    public static int CalculateTotalTime(int inicialInstant, int finalInstant) // Método para calcular o tempo total da locação
     {
         if (InicialInstant < FinalInstant)
         {
-            return TotalTime = FinalInstant - InicialInstant;
+            return FinalInstant - InicialInstant;
         }
         else if (InicialInstant == FinalInstant)
         {
-            return TotalTime = 13;
+            return 24;
         }
         else
         {
-            return TotalTime = 24 - InicialInstant + FinalInstant;
+            return 24 - InicialInstant + FinalInstant;
         }
     }
 }

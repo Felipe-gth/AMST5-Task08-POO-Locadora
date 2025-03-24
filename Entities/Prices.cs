@@ -11,11 +11,11 @@ public class Prices
     public double Days { get; private set; }
     public double TotalPrice { get; private set; }
 
-    public void CalculatePrice(int totalTime){ // Método para calcular o preço da locação
+    public void CalculatePrice(double totalTime){ // Método para calcular o preço da locação
         if (totalTime > 12) { // Estutura condicional para verificar se o locador ficou mais de 12 horas com o carro
             Console.WriteLine("");
 
-            TotalPrice = DayPrice * 1; // Caso o locador tenha ficado mais de 12 horas com o carro, o programa calcula o preço de acordo com a quantidade de dias
+            TotalPrice = Math.Ceiling(totalTime / 12) * DayPrice; // Caso o locador tenha ficado mais de 12 horas com o carro, o programa calcula o preço de acordo com a quantidade de dias
         }
         else {
             TotalPrice = HourPrice * totalTime; // Caso o locador tenha ficado menos de 12 horas com o carro, o programa calcula o preço de acordo com a quantidade de horas
